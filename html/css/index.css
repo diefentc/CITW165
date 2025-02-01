@@ -1,7 +1,53 @@
+body {
+    background-color: #ffffff;
+}
+
+.banner, .footer-banner {
+    background-color: rgb(0, 20, 196);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.footer-banner {
+    clear: both;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    float: left;
+    background-color: #f4f4f4;
+    padding: 1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5em 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
 #projects a:hover {
     color: black;
 }
-
 
 #projects ul {
     list-style-type: square;
@@ -17,7 +63,18 @@
     font-size: 1.5em;
 }
 
+.sidebar-projects {
+    clear: both;
+}
+
 footer {
     padding-left: 1em;
     text-align: left;
+}
+
+.about-me {
+    margin-left: 245px; /* 220px (sidebar width) + 25px (padding) */
+    padding: 1em;
+    background-color: #e9ecef;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
