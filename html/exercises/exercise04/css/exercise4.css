@@ -100,7 +100,6 @@ p + h2 {
 #bookRate{
   text-decoration: line-through;
   display: inline-block;
-  float: left;
   padding-top: 10px;}
 
 #specialRate {  
