@@ -61,7 +61,7 @@ p + h2 {
 
 /* details in the black bar */
 
-#hotelName {
+#bookName {
   text-transform: uppercase;
   text-align: center; 
   font-size: 120%;
@@ -84,18 +84,20 @@ p + h2 {
   display: inline-block;
   margin: 0px;}
 
-#roomRate{
+#bookRate{
   text-decoration: line-through;
   display: inline-block;
   float: left;
   padding-top: 10px;}
 
 #specialRate {  
-  font-size: 440%;
+  font-size: 400%;
   color: #ffb87a;
   display: inline-block;
   padding: 10px 0px 20px 0px;
-  margin: 0px;}
+  margin: 0px;
+  text-align: center;
+}
 
 #offerEnds {
   text-transform: uppercase;
