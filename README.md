@@ -2,10 +2,11 @@
 
 ## Exercise 04
 
-- [ ] Use the supplied HTML, CSS and images in assg04 zipped file on D2L for this Exercise.
-- [ ] Read material and code on pages 142-143 of the textbook.  You'll find there similar code to the assgn04.zip file.  You should modify the content, images and variable names.  Be sure to follow the "spirit" of the example that is described in detail on p. 141.   For full credit on the assignment change the hotel theme and update it to a different theme of a car dealership, bookstore, or another business.
-  - [ ] Create an object that has three properties: a name, a rate, and percentage discount being offered. Plus a method to calculate the offer price which is shown to the user.
-  
+- [x] Use the supplied HTML, CSS and images in assg04 zipped file on D2L for this Exercise.
+- [x] Read material and code on pages 142-143 of the textbook. You'll find there similar code to the assgn04.zip file. You should modify the content, images and variable names. Be sure to follow the "spirit" of the example that is described in detail on p. 141. For full credit on the assignment change the hotel theme and update it to a different theme of a car dealership, bookstore, or another business.
+
+  - [x] Create an object that has three properties: a name, a rate, and percentage discount being offered. Plus a method to calculate the offer price which is shown to the user.
+
   - The second part of the script will show that the offer will expire in seven days. It does this using a function called offerExpires(). The date currently set on the users computer is passed as an argument to that function so that it can calculate when the offer ends.
 
 ## Exercise 03
