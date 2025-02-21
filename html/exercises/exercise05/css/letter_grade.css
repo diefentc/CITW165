@@ -9,6 +9,11 @@ body {
     font-family: Georgia,serif;
 
 }
+
+nav ul li {
+    list-style-type: none;
+  }
+
 section{
     margin:10px auto 10px auto;
     width:800px;
