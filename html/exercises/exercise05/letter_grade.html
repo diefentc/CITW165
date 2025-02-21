@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Show letter grade</title>
+
+    <script src="./js/letter_grade.js"></script>
+    <link rel="stylesheet" href="./css/letter_grade.css" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <h3>Convert the Number Score to a Letter Grade</h3>
+      <form id="form1" action="#">
+        <label for="score">Enter the number between 0 and 100</label>
+        <input type="text" id="score" name="score" />
+        <p>&nbsp;</p>
+
+        <input type="reset" id="reset" />
+        <input type="submit" id="submit" onClick="calc()" />
+      </form>
+    </section>
+  </body>
+</html>
