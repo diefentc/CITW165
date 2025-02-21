@@ -1,8 +1,10 @@
 
 /*
-Name: letter_grade.js
-Author: Christopher Diefenthaler
-Date: 2025-02-20
+Date    : 2025-02-20
+Name    : letter_grade.js
+Author  : Christopher Diefenthaler
+Class   : CITW 165
+Exercise: Exercise 05
 Abstract: This script will take a numeric score and return the letter grade
 
         A = 90-100
