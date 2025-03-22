@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="./css/exercise8.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/ex08.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">Tasks</h1>
+      <h2>Complete tasks <span id="counter"></span></h2>
+      <ul>
+        <li id="one" class="urgent">task 1</li>
+        <li id="two" class="urgent">task 2</li>
+        <li id="three" class="urgent">task 3</li>
+        <li id="four">task 4</li>
+      </ul>
+      <div id="newItemButton">
+        <button href="#" id="showForm">new task</button>
+      </div>
+      <form id="newItemForm">
+        <input
+          type="text"
+          id="itemDescription"
+          placeholder="Add task (End with ! for urgent)"
+        />
+        <input type="submit" id="add" value="add" />
+      </form>
+    </div>
+  </body>
+</html>
