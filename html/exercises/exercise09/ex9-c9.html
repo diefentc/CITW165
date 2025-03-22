@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage Demo</title>
+    <link rel="stylesheet" href="css/ex9.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./exercise9.html">Exercise 9</a></li>
+        <li><a href="../../index.html">Home</a></li>
+      </ul>
+    </nav>
+    <h1>Storage Demo</h1>
+    <div id="controls">
+      <form id="storageForm">
+        <div id="inputs">
+          <label for="keyInput">Key:</label>
+          <input type="text" id="keyInput" name="keyInput" />
+          <label for="dataInput">Value:</label>
+          <input type="text" id="dataInput" name="dataInput" />
+        </div>
+        <div id="buttons">
+          <button type="button" id="saveLocal">Save to LocalStorage</button>
+          <button type="button" id="retrieveLocal">
+            Retrieve from LocalStorage
+          </button>
+          <br />
+          <button type="button" id="saveSession">Save to SessionStorage</button>
+          <button type="button" id="retrieveSession">
+            Retrieve from SessionStorage
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="tables">
+      <h2>LocalStorage</h2>
+      <table id="localStorageTable">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <h2>SessionStorage</h2>
+      <table id="sessionStorageTable">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p id="output"></p>
+    <script src="js/ex9-c9.js"></script>
+  </body>
+</html>
