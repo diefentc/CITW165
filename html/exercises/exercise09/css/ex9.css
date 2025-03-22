@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  background-color: #000;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: #403c3b;
+  padding: 10px 0;
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+  padding-left: 15px; /* Add padding to the home link */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Oswald', 'Futura', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #cb6868;
+}
+
+#controls {
+  position: absolute;
+  top: 60px; /* Adjusted to rest underneath the nav bar */
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type='text'], input[type='password'], textarea {
+  background-color: #999;
+  color: #333;
+  font-size: 18px;
+  width: 150px;
+  padding: 4px 6px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Add margin to the left of the buttons */
+}
+
+button {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#tables {
+  margin-top: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+  width: 50%; /* Ensure columns are the same width */
+}
+
+th {
+  background-color: #403c3b;
+}
+
+td {
+  background-color: #666;
+}
+
+#output {
+  background-color: #fff;
+  color: #666;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+    color: white;
+}
