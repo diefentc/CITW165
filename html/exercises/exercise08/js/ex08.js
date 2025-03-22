@@ -13,17 +13,17 @@ $(function() {
     // SETUP
     var $taskList, $taskForm, $taskButton;
     var task = '';                                              // task is an empty string
-    $taskList = $('ul');                                        // Cache the unordered list
+    $taskList = $('#page ul');                                  // Cache the unordered list within #page
     $taskForm = $('#newItemForm');                              // Cache form to add new tasks
     $taskButton = $('#newItemButton');                          // Cache button to show form
 
-    $('li').hide().each(function(index) {                       // Hide list items
+    $taskList.children('li').hide().each(function(index) {      // Hide list items
         $(this).delay(450 * index).fadeIn(1600);                // Then fade them in
     });
 
     // TASK COUNTER
     function updateTaskCount() {                                // Declare function
-        var tasks = $('li[class!=complete]').length;            // Number of tasks in list
+        var tasks = $taskList.children('li[class!=complete]').length; // Number of tasks in list
         $('#counter').text(tasks);                              // Added into counter circle
     }
     updateTaskCount();                                          // Call the function
