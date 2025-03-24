@@ -5,6 +5,7 @@ body {
   font-family: 'Oswald', 'Futura', sans-serif;
   margin: 0px;
   padding: 0px;
+  color: #fff; /* Ensure text is visible on black background */
 }
 
 nav {
@@ -106,7 +107,7 @@ button:hover {
 }
 
 #tables {
-  margin-top: 150px;
+  margin-top: 250px; /* Increase margin-top to move tables down */
 }
 
 table {
@@ -145,4 +146,13 @@ td {
 
 h2 {
     color: white;
+}
+
+h1.centered {
+  text-align: center;
+  position: absolute;
+  top: 100px; /* Adjust as needed to overlap the key-value storage section */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it overlaps other elements */
 }
