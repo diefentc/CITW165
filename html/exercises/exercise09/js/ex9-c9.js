@@ -1,7 +1,7 @@
 /**********
 Author      : Christopher Diefenthaler
 Class       : CITW 165
-Exercise    : Exercise # 9
+Exercise    : Exercise # 9 - Storage API
 Abstract    : 
 **********/
 document.getElementById('saveLocal').addEventListener('click', function() {
