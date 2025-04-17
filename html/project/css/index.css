@@ -1,0 +1,49 @@
+/* Align languages and content sections side by side */
+#top-content {
+    display: flex;
+    margin-top: 1em;
+}
+
+#languages {
+    flex: 0 0 20%;
+    border: 3px solid;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+#languages h3 {
+    text-align: center;
+}
+
+#content {
+    flex: 1;
+    border: 3px solid;
+    padding: 1em;
+}
+
+/* Align classes and education sections side by side */
+#bottom-content {
+    display: flex;
+    margin-top: 1em;
+}
+
+#classes {
+    flex: 0 0 50%;
+    border: 3px solid;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+#classes h3 {
+    text-align: center;
+}
+
+#education {
+    flex: 1;
+    border: 3px solid;
+    padding: 1em;
+}
+
+#education h3 {
+    text-align: center;
+}
