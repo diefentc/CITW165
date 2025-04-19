@@ -8,6 +8,7 @@ footer {
     color: white;
     margin-top: 1em;
     border: 0.25em solid black;
+    border-radius: 1em;
     text-align: center;
 }
 
