@@ -1,28 +1,49 @@
-/* Dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
+/* Align top-left and top-right sections side by side */
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    border-bottom: 2px solid black; /* Add a separator line */
+    padding-bottom: 1em; /* Add spacing below the content */
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+#top-left {
+    flex: 2; /* Takes up more space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-right: 1em;
 }
 
-/* Sow the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+#top-right {
+    flex: 1; /* Takes up less space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-left: 1em;
 }
 
-/* Style dropdown links on hover */
-.dropdown-content li a:hover {
-    background-color: #ddd;
+#bottom-upper {
+    border-bottom: 2px solid black; /* Add a separator line */
+    padding-bottom: 1em; /* Add spacing below the content */
+}
+
+
+/* Align bottom-left and bottom-right sections side by side */
+#bottom-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#bottom-left {
+    flex: 2; /* Takes up more space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+#bottom-right {
+    flex: 1; /* Takes up less space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-left: 1em;
 }
