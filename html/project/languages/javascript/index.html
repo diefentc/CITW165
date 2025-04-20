@@ -6,6 +6,7 @@
     <title>JavaScript</title>
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/calculator.js"></script>
   </head>
   <body>
     <nav>
@@ -25,13 +26,128 @@
       <!-- Right side of the navigation bar -->
       <div id="nav-right">
         <ul>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="../../about.html">About</a></li>
         </ul>
       </div>
     </nav>
+    <header><h1>Cat Math</h1></header>
+    <div id="outer">
+      <!-- Left Container (Empty) -->
+      <div id="left">
+        <p>
+          <h3>Food Per Day</h3>
+          Fetch by WebMD says that cats should eat between 24 to 35 calories a day, per pound
+        </p>
+        <p>
+          In order to find out how much your cat should be eating, we need to figure out their Resting and Maintenance Energy Requirements (RER and MER)
+        </p>
+        <p>
+          <h3>Maintenance Energy Requirements (MER)</h3>
+          Vets determine a cat's caloric needs in the following manner<br>
+          <h4>Determine the Resting Energy Requirements</h4>
+          RER = 70(body weight in kg)<sup>0.75</sup><br>
+          <h4>Determine the MER</h4>
+          Determine this value by multiplying by an appropriate factor.<br>
+          Typical Neutered pet: 1.2<br>
+          Needs to lose weight: 0.8<br>
+          The MER will be how many calories your cat will need for daily intake to either maintain or lose weight.
+        </p>
+      </div>
 
+      <!-- Center Container -->
+      <div id="center">
+        <form id="cat_math" name="cat_math" onsubmit="return validateAndSubmit(event)" onreset="return refresh(event)">
+          <div class="form-row">
+            <label for="petName">Name:</label>
+            <input type="text" name="petName" id="petName" class="entry">
+          </div>
+
+          <div class="form-row">
+            <label for="curWeight">Current Weight:</label>
+            <input type="number" name="curWeight" id="curWeight" class="entry">
+          </div>
+
+          <div class="form-row">
+            <label for="desWeight">Goal Weight:</label>
+            <input type="number" name="desWeight" id="desWeight" class="entry">
+          </div>
+
+          <div class="form-row">
+            <label for="wetFood">Wet Food Type:</label>
+            <select name="wetFood" id="wetFood">
+              <option value="0">Select a food</option>
+              <option value="Friskies">Friskies</option>
+              <option value="Science Hills">Science Hills</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="dryFood">Dry Food Type:</label>
+            <select name="dryFood" id="dryFood">
+              <option value="0">Select a food</option>
+              <option value="Purina">Purina</option>
+              <option value="Science Hills">Science Hills</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="wetServings">Wet Servings:</label>
+            <input type="number" name="wetServings" id="wetServings" class="entry">
+          </div>
+
+          <div class="form-row">
+            <label for="dryServings">Dry Servings:</label>
+            <input type="number" name="dryServings" id="dryServings" class="entry">
+          </div>
+
+          <div class="button-container">
+            <input type="submit" value="Submit" name="submit" id="btn_submit" class="btn">
+            <input type="reset" value="Reset" name="reset" id="btn_reset" class="btn">
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Container -->
+      <div id="right">
+        <p>
+          <strong>NOTE:</strong>For these calculations, I am assuming the pets are neutered and we are using 0.9 and 0.75 respectively
+        </p>
+        <p>
+          This form will help take into consideration other elements, such as number of meals and combinations of wet and dry food.<br>
+          It will output how many calories are required, as well as how much each serving of food should be.
+        </p>
+      </div>
+      <!-- Modal Container -->
+      <div id="results-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3>Results</h3>
+          <form id="results" name="results">
+            <label>MER:</label>
+            <label id="MER"></label><br />
+
+            <label>Dry Calories Per Day:</label>
+            <label id="dryCalPerDay"></label><br />
+
+            <label>Wet Calories Per Day:</label>
+            <label id="wetCalPerDay"></label><br />
+
+            <label>Dry Grams Per Serving:</label>
+            <label id="grPerServe"></label><br />
+
+            <label>Wet Oz Per Serving:</label>
+            <label id="ozPerServe"></label>
+          </form>
+          <p id="msg"></p>
+        </div>
+      </div>
+    </div>
     <footer>
       <p id="imgcredit">&copy; 2025 Christopher Diefenthaler</p>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/calc_modal.js"></script>
+  <script src="./js/calc_verify.js"></script>
 </html>
