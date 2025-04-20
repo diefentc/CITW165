@@ -1,28 +1,132 @@
-/* Dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
+/* General Styles */
+body {
+    font-family: Georgia, serif;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+
+#outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+#left, #center, #right {
+    flex: 1;
+    margin: 0 5px;
+}
+
+#center {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    text-align: center; /* Center text inside the div */
+    border: 2px solid black;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px;
+}
+
+#results {
+    margin: 10px auto;
+    width: 600px;
+    padding: 10px;
+    background-color: rgba(150, 210, 150, 0.5);
+    border-radius: 10px;
     display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-/* Sow the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+#results h3 {
+    text-align: center;
 }
 
-/* Style dropdown links on hover */
-.dropdown-content li a:hover {
-    background-color: #ddd;
+/* Form Styles */
+form#cat_math {
+    display: flex;
+    flex-direction: column; /* Stack form rows vertically */
+    align-items: flex-start; /* Align labels and inputs to the left within the form */
+    width: auto; /* Allow the form to size naturally */
+}
+
+form#cat_math .form-row {
+    display: flex;
+    justify-content: flex-start; /* Align label and input horizontally */
+    align-items: center; /* Vertically center-align label and input */
+    margin-bottom: 1em; /* Add spacing between rows */
+    width: 100%; /* Ensure rows span the form width */
+}
+
+form#cat_math label {
+    width: 11em; /* Fixed width for labels */
+    text-align: right; /* Align label text to the right */
+    margin-right: 1em; /* Add spacing between label and input */
+}
+
+form#cat_math input.entry,
+form#cat_math select {
+    width: 14em; /* Ensure inputs and selects are the same width */
+}
+
+form#cat_math .button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    width: 100%; /* Ensure the button container spans the form width */
+    margin-top: 1em; /* Add spacing above the buttons */
+}
+
+form#cat_math .button-container input.btn {
+    width: 14em; /* Match the width of the input fields */
+    padding: 0.5em; /* Add padding for better appearance */
+    margin-left: 1em; /* Add spacing between buttons if needed */
+}
+
+/* Error Label */
+label.error {
+    float: none;
+    color: #A947A9;
+    font-size: 87.5%;
+    margin-left: 0.5em;
+    font-family: Geneva, sans-serif;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Width of the modal */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
