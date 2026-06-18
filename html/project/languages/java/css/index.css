@@ -1,0 +1,49 @@
+/* Align top-left and top-right sections side by side */
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    border-bottom: 2px solid black; /* Add a separator line */
+    padding-bottom: 1em; /* Add spacing below the content */
+}
+
+#top-left {
+    flex: 2; /* Takes up more space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+#top-right {
+    flex: 1; /* Takes up less space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+#bottom-upper {
+    border-bottom: 2px solid black; /* Add a separator line */
+    padding-bottom: 1em; /* Add spacing below the content */
+}
+
+
+/* Align bottom-left and bottom-right sections side by side */
+#bottom-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#bottom-left {
+    flex: 2; /* Takes up more space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+#bottom-right {
+    flex: 1; /* Takes up less space */
+    border: 2px solid #ccc;
+    padding: 1em;
+    margin-left: 1em;
+}
